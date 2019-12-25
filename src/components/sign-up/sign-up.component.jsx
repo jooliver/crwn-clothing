@@ -52,45 +52,43 @@ class SignUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
       <div className="sign-up">
-        <SignUp>
-          <h2 className="title">I do not have an account</h2>
-          <span>Sign up with your email and password</span>
-          <form className="sign-up-form" onSubmit={this.handleSubmit}>
-            <FormInput
-              type="text"
-              name="displayName"
-              value={displayName}
-              onChange={this.handleChange}
-              label={displayName}
-              require
-            ></FormInput>
-            <FormInput
-              type="email"
-              name="email"
-              value={email}
-              onChange={this.handleChange}
-              label={email}
-              require
-            ></FormInput>
-            <FormInput
-              type="password"
-              name="password"
-              value={password}
-              onChange={this.handleChange}
-              label={password}
-              require
-            ></FormInput>
-            <FormInput
-              type="password"
-              name="confirmPassword"
-              value={confirmPassword}
-              onChange={this.handleChange}
-              label={confirmPassword}
-              require
-            ></FormInput>
-            <CustomButton type="submit">Sign Up</CustomButton>
-          </form>
-        </SignUp>
+        <h2 className="title">I do not have an account</h2>
+        <span>Sign up with your email and password</span>
+        <form className="sign-up-form" onSubmit={this.handleSubmit}>
+          <FormInput
+            type="text"
+            name="displayName"
+            value={displayName}
+            onChange={this.handleChange}
+            label="Name"
+            require
+          ></FormInput>
+          <FormInput
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.handleChange}
+            label="Email"
+            require
+          ></FormInput>
+          <FormInput
+            type="password"
+            name="password"
+            value={password}
+            onChange={this.handleChange}
+            label="Password"
+            require
+          ></FormInput>
+          <FormInput
+            type="password"
+            name="confirmPassword"
+            value={confirmPassword}
+            onChange={this.handleChange}
+            label="Confirm Password"
+            require
+          ></FormInput>
+          <CustomButton type="submit">Sign Up</CustomButton>
+        </form>
       </div>
     );
   }
