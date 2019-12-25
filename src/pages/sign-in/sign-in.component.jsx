@@ -1,8 +1,8 @@
 import React from "react";
-import SignIn from "../../components/sign-in/sign-in.component";
+import SignInAndSignUp from "../../components/sign-in-and-sign-up/sign-in-and-sign-up.component";
 const SignInPage = () => (
   <div>
-    <SignIn />
+    <SignInAndSignUp />
   </div>
 );
 
